@@ -1,0 +1,43 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  /* серый #757575; */
+  /*  белый #FFFFFF; */
+}
+
+body {
+  background-color: #e5e5e5;
+  color: #757575;
+
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* цвет заглавий #212121; */
+
+/* логотип 757575 */
+.logo {
+  color: #212121;
+}
+.logo {
+}
+span {
+  color: #2196f3;
+}
+.logo-nav.link:focus {
+  color: #2f303a;
+}
+/* сайты навигации */
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+/* секциии */
+.section-title {
+  color: #212121;
+}
+/* скрыть название первой ? */
+.section-title fest {
+  color: none;
+}
