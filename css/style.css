@@ -4,28 +4,50 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   /* background-color head #FFFFFF  footer #2F303A;*/
+  /* цвет заглавий #212121; */
 }
 
 body {
   background-color: #e5e5e5;
   color: #757575;
 
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
   line-height: 1.5;
+  font-weight: 500;
+  font-size: 16px;
 }
-
-/* цвет заглавий #212121; */
 
 /* логотип  */
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.list {
+  list-style: none;
+}
+/* .page-header.logo  */
+
 .logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.page-header span {
   color: var(--title-text-color);
 }
-span {
-  color: #2196f3;
-}
+
 .logo-nav .link:hover,
-.logo-nav.link:focus {
+.logo-nav .link:focus {
   color: #2f303a;
+}
+.logo {
+  list-style: none;
+  text-decoration: none;
 }
 /* сайты навигации */
 .site-nav .link:hover,
@@ -34,15 +56,46 @@ span {
 }
 .site-nav .link.current {
   color: var(--accent-color);
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
+
+.button {
+  list-style: none;
+  text-decoration: none;
+}
+
 /* секциии */
 .section-title {
   color: var(--primary-text-color);
+
+  font-style: 700;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.section-title-text {
+  font-style: 400;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 9;
+  letter-spacing: 0.03em;
 }
 /* button */
 /* .button {
    ..style-list: none;
     } */
+button {
+  font-style: 500;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  list-style-type: none;
+}
 .button-primary {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
@@ -50,4 +103,23 @@ span {
 .button-secondary {
   background-color: var(--primary-text-color);
   color: var(--title-text-color);
+}
+.button {
+  cursor: pointer;
+}
+/* футер */
+.page-footer {
+  background-color: #2f303a;
+}
+.logo {
+  color: var(--accent-color);
+}
+.page-footer span {
+  color: var(--primary-white-color);
+}
+address {
+  color: var(--primary-white-color);
+}
+.link {
+  color: #757575;
 }
