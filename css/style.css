@@ -32,6 +32,9 @@ span {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 /* секциии */
 .section-title {
   color: var(--primary-text-color);
@@ -41,10 +44,10 @@ span {
    ..style-list: none;
     } */
 .button-primary {
-  background-color: var(--accent-color--);
-  color: var(--primary-white-color--);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 .button-secondary {
-  background-color: var(--primary-text-color--);
-  color: var(--title-text-color--);
+  background-color: var(--primary-text-color);
+  color: var(--title-text-color);
 }
