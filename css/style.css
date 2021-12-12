@@ -134,18 +134,18 @@ header {
 .hero-button:focus {
   background: #188ce8;
 }
-.button {
+.buttons {
   display: inline-block;
-  padding: 6px 22px;
+ 
   border-radius: 4px;
-  min-width: 86px;
- margin: 0 auto;
-  background: #F5F4FA;
+  min-width: 610px;
+  margin: 0 auto;
+  justify-content: center;
+ /* Properties for the flex container */
+  flex-direction: row;
+  
   color: var(--title-color);
   border: 1px solid red
-
-  text-decoration: none;
-  text-align: center;
 }
 
 .title {
