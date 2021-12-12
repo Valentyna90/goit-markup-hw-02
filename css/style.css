@@ -134,25 +134,18 @@ header {
 .hero-button:focus {
   background: #188ce8;
 }
-.buttons {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
- 
-  margin-right: 8px;
-  background: #F5F4FA;
-  border-radius: 4px;
-  border: 
-  color: var(--title-color);
+.button {
+  display: inline-block;
   padding: 6px 22px;
- 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  /* identical to box height, or 162% */
+  border-radius: 4px;
+  min-width: 86px;
+ margin: 0 auto;
+  background: #F5F4FA;
+  color: var(--title-color);
+  border: 1px solid red
+
+  text-decoration: none;
   text-align: center;
-  letter-spacing: 0.03em;
- 
 }
 
 .title {
