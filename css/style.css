@@ -3,32 +3,47 @@
   --title-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  /* background-color head #FFFFFF  footer #2F303A;*/
-  /* цвет заглавий #212121; */
+  --card-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+
 }
 
 body {
-  background-color: #ffffff;
-  color: #757575;
-
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  letter-spacing: 0.03em;
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
   line-height: 1.5;
-  font-weight: 500;
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-.section {
-  padding: 94;
+ul li {
+  list-style: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  border: 1px solid white;
+  width: 1170px;
+  margin-left:  auto;
+  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid red;
+  
 }
+
 header {
   border-bottom: 1px solid #ececec;
+  margin-bottom: 0;
 }
 .nav,
 .links,
@@ -42,6 +57,7 @@ header {
 /* .logo */
 .page-header .logo {
   margin-right: 93px;
+  
   display: flex;
   align-items: center;
   font-family: "Raleway", sans-serif;
@@ -50,6 +66,7 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+
 }
 .color-black {
   color: var(--title-color);
@@ -83,26 +100,12 @@ header {
 .links a:focus {
   color: var(--accent-color);
 }
-/* Активная страница */
-/* .nav-link .active:hover,
-.nav-link .active:focus {
-    color: var(--accent-color);
-}
-.nav-link .activ:active {
-    color: var(--accent-color);
-} */
-/* 
-.nav-link:hover,
-.nav-link:focus{
-    color: var(--theme-color);
-}
 
-.active-page{
-    color: var(--theme-color);
-} */
-/* секция герой */
+
 .hero {
+  margin-top: 200px;
   padding: 200px, 0;
+ 
   background-color: #2f303a;
 }
 .hero-title {
@@ -114,13 +117,13 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   max-width: 650;
-  margin: 0 auto;
   margin-bottom: 30px;
 }
 .hero-button {
   padding: 10px 32px;
   border-radius: 4px;
   margin: 0 auto;
+  margin-bottom: 200px;
   display: block;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #2196f3;
@@ -129,42 +132,93 @@ header {
   line-height: 30px;
   letter-spacing: 0.06em;
   color: #ffffff;
+  border: none;
+  
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
   background: #188ce8;
-}
-.buttons {
-  display: inline-block;
- 
-  border-radius: 4px;
-  min-width: 610px;
-  margin: 0 auto;
-  justify-content: center;
- /* Properties for the flex container */
-  flex-direction: row;
-  
-  color: var(--title-color);
-  border: 1px solid red
+
 }
 
+/* CARD-SET */
+.card-set {
+  /* outline: 1px solid tomato; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+
+   margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+  }
+  .card-set> .item {
+/* outline: 1px solid teal; */
+
+flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+margin-left: var(--card-set-gap);
+margin-top: var(--card-set-gap);
+  }
+.card-thumb {
+  outline: 1px solid green;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  color: var(--title-color)
+  background-color #F5F4FA;
+  font-size: 16px;
+
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+}
+.button-primary {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+/* ЗАГЛАВИЕ */
 .title {
   color: var(--title-color);
   display: block;
   margin: auto 0;
   text-align: center;
 }
-.title-2 {
- color: var(--title-color);
-  display: block;
-  margin: auto 0;
-  text-align: left; 
-}
+
 .section-title {
   color: var(--title-color);
 }
 .text {
   color: #212121;
+}
+/* ПОРТФОЛИО КАРТОЧКИ */
+
+
+/* .card-thumb {
+  outline: 1px solid  red; */
+
+.item {
+  outline: 1px solid tomato;
+}
+.card-content {
+ padding: 30px;
+}
+.card-text {
+  margin-top: 10px;
+}
+.content {
+  justify-content: center;
+}
+.card {
+  box-shadow: var(--card-shadow);
 }
 /* Footer */
 
@@ -190,6 +244,7 @@ header {
 }
 .page-footer span {
   color: var(--primary-white-color);
+  
 }
 address {
   color: var(--primary-white-color);

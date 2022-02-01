@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <!-- верняя линия -->
@@ -50,40 +53,45 @@
     <!--секция герой -->
     <main>
       <!-- Навигационные кнопки -->
+       
       <section class="hero">
+        <div class="hero-section">
+       
         <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
         <button type="button" class="hero-button" data-model-open>
           Заказать услугу
         </button>
+       </div>
       </section>
+       
 
       <section class="section">
         <h2 hidden>Особенности</h2>
         <!--Особенности-->
         <div class="container">
-          <ul class="list">
-            <li>
+          <ul class="card-set">
+            <li class="item">
               <h3 class="section-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <h3 class="section-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -128,46 +136,74 @@
       <section>
         <h2 class="title">Наша команда</h2>
         <div class="container">
-          <ul class="list">
-            <li>
-              <img
-                width="270"
-                height="260"
-                src="./images/img_4.jpg"
-                alt="project"
-              />
-              <h3 class="section-title">Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+          <ul class="card-set">
+            
+
+                <li class="item">
+                  <article class="card">
+              <div class="card thumb">
+                  <img
+                    width="270"
+                    height="260"
+                    src="./images/img_4.jpg"
+                    alt="project"
+                  />
+                <div class="content">
+                  <h3 class="card-heading">Игорь Демьяненко</h3>
+                  <p class="card-text">Product Designer</p>
+                 </div>
+              </div>
+            </article>
             </li>
-            <li>
-              <img
-                width="270"
-                height="260"
-                src="./images/img_1.jpg"
-                alt="Frontend Developer"
-              />
-              <h3 class="section-title">Ольга Репина</h3>
-              <p>Frontend developer</p>
-            </li>
-            <li>
+           
+                <li class="item">
+                   <article class="card">
+              <div class="card thumb">
+                  <img
+                    width="270"
+                    height="260"
+                    src="./images/img_1.jpg"
+                    alt="Frontend Developer"
+                  />
+              <div class="content">
+                <h3 class="card-heading">Ольга Репина</h3>
+                <p class="card-text">Frontend developer</p>
+              </div>
+              </div>
+            </article>
+              </li>
+            
+            <li class="item">
+              <article class="card">
+              <div class="card thumb">
               <img
                 width="270"
                 height="260"
                 src="./images/img_2.jpg"
                 alt="Marketing"
               />
-              <h3 class="section-title">Николай Тарасов</h3>
-              <p>Marketing</p>
+             <div class="content">
+                <h3 class="card-heading">Николай Тарасов</h3>
+              <p class="card-text">Marketing</p> </div>
+             </div>
+            </article>
             </li>
-            <li>
+            
+            <li class="item">
+              <article class="card">
+              <div class="card thumb">
               <img
                 width="270"
                 height="260"
                 src="./images/img_3.jpg"
                 alt="UI Designer"
               />
-              <h3 class="section-title">Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <div class="content">
+                <h3 class="card-heading">Михаил Ермаков</h3>
+              <p class="card-text">UI Designer</p>
+              </div>
+               </div>
+            </article>
             </li>
           </ul>
         </div>

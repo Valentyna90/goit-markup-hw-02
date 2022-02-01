@@ -11,7 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <!--верхняя линия-->
@@ -53,171 +56,214 @@
     <main>
       <!--навигационные кнопки-->
       <section class="section">
+        <h1 hidden>Главная секция</h1>
+        <nav class="container">
+          <ul class="button">
+            <li><button type="button" class="button-primary">Всё</button></li>
+            <li>
+              <button type="button" class="button-secondary">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="button-secondary">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="button-secondary">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button-secondary">Маркетинг</button>
+            </li>
+          </ul>
+        </nav>
+        <!-- Карточки портфолио -->
+        <!--project1-->
+
         <div class="container">
-          <h1 hidden>Главная секция</h1>
-          <nav class="container">
-            <ul class="buttons">
-              <li><button type="button" class="button-primary">Всё</button></li>
-              <li>
-                <button type="button" class="button-secondary">
-                  Веб-сайты
-                </button>
-              </li>
-              <li>
-                <button type="button" class="button-secondary">
-                  Приложения
-                </button>
-              </li>
-              <li>
-                <button type="button" class="button-secondary">Дизайн</button>
-              </li>
-              <li>
-                <button type="button" class="button-secondary">
-                  Маркетинг
-                </button>
-              </li>
-            </ul>
-          </nav>
-
-          <!--project1-->
-
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_11.jpg"
-                  alt="Портфолио_1"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Технокряк</h2>
-                <p class="text">Вебсайт</p>
-              </a>
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                <img 
+                    src="./images/img_11.jpg" 
+                    alt="Портфолио_1"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Технокряк</h2>
+                    <p class="card-text">Вебсайт</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project2-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_12.jpg"
-                  alt="Портфолио_2"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Постер New Orlean vs Golden Star</h2>
-                <p class="text">Дизайн</p>
-              </a>
+         
+        <!--project2-->
+        
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_12.jpg"
+                    alt="Портфолио_2"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Постер New Orlean vs Golden Star</h2>
+                    <p class="card-textt">Дизайн</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project3-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_13.jpg"
-                  alt="Портфолио_3"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Ресторан Seafood</h2>
-                <p class="text">Приложение</p>
-              </a>
+          
+         <!--project3-->
+        
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_13.jpg"
+                    alt="Портфолио_3"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Ресторан Seafood</h2>
+                    <p class="card-text">Приложение</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project4-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_14.jpg"
-                  alt="Портфолио_4"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Проект Prime</h2>
-                <p class="text">Маркетинг</p>
-              </a>
+        
+         <!--project4-->
+         
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_14.jpg"
+                    alt="Портфолио_4"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Проект Prime</h2>
+                    <p class="card-text">Маркетинг</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project5-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_15.jpg"
-                  alt="Портфолио_5"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Проект Boxes</h2>
-                <p class="text">Приложение</p>
-              </a>
+         
+        
+         <!--project5-->
+         
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_15.jpg"
+                    alt="Портфолио_5"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Проект Boxes</h2>
+                    <p class="card-text">Приложение</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project6-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_16.jpg"
-                  alt="Портфолио_6"
-                  width="370"
-                  height="294"
-                />
-                <h2 lang="en" class="title-2">Inspiration has no Borders</h2>
-                <p class="text">Веб-сайт</p>
-              </a>
+         
+       
+         <!--project6-->
+         
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_16.jpg"
+                    alt="Портфолио_6"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 lang="en" class="card-heading">
+                  Inspiration has no Borders
+                   </h2>
+                    <p class="card-text">Веб-сайт</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project7-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_17.jpg"
-                  alt="Портфолио_7"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Издание Limited Edition</h2>
-                <p class="text">Дизайн</p>
-              </a>
+        
+        
+         <!--project7-->
+        
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_17.jpg"
+                    alt="Портфолио_7"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Издание Limited Edition</h2>
+                    <p class="card-text">Дизайн</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project8-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_18.jpg"
-                  alt="Портфолио_8"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Проект LAB</h2>
-                <p class="text">Маркетинг</p>
-              </a>
+          
+      
+         <!--project8-->
+         
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_18.jpg"
+                    alt="Портфолио_8"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Проект LAB</h2>
+                    <p class="card-text">Маркетинг</p>
+                  </div>
+                </div>
+              </article>
             </li>
-          </ul>
-          <!--project9-->
-          <ul class="list">
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img_19.jpg"
-                  alt="Портфолио_9"
-                  width="370"
-                  height="294"
-                />
-                <h2 class="title-2">Growing Business</h2>
-                <p class="text">Приложение</p>
-              </a>
+       
+         <!--project9-->
+         
+          <ul class="card-set">
+            <li class="item">
+              <article class="card">
+                <div class="card-thumb">
+                  <img
+                    src="./images/img_19.jpg"
+                    alt="Портфолио_9"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="card-content">
+                    <h2 class="card-heading">Growing Business</h2>
+                    <p class="card-text">Приложение</p>
+                  </div>
+                </div>
+              </article>
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+        
 
     <!--Подвал странички-->
     <footer class="page-footer">
