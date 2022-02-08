@@ -286,6 +286,10 @@ address {
 .list-item .link {
   color: var(--primary-text-color);
 }
+.list-item .link:hover,
+.list-item .link:focus {
+  color: var(--accent-color);
+}
 
 .address {
   color: var(--primary-white-color);
