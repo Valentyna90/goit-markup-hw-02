@@ -8,6 +8,14 @@
 }
 
 body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   line-height: 1.5;
@@ -74,7 +82,6 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  /* text-decoration: none; */
 }
 .accent-black {
   color: var(--title-color);
@@ -85,6 +92,7 @@ header {
 
 .contacts a,
 .links a {
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -112,11 +120,11 @@ header {
 .links a:focus {
   color: var(--accent-color);
 }
-/* .link-current link:hover,
+.link-current link:hover,
 .link-current link:focus,
 .link-current link:active {
   color: blue;
-} */
+}
 
 /* Главная секция */
 .hero {
@@ -126,6 +134,7 @@ header {
 }
 /* Эффективные решения */
 .hero-title {
+  font-family: "Roboto" sans-serif;
   font-size: 44px;
   color: var(--primary-white-color);
   text-transform: uppercase;
@@ -160,18 +169,18 @@ header {
   background: #188ce8;
 }
 
-/* CARD-SET */
+/* ОСОБЕННОСТИ */
 .card-set {
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   padding: 0;
   margin: 0;
   list-style: none;
 
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
 
   margin-left: calc(-1 * var(--card-set-gap));
-  margin-top: calc(-1 * var(--card-set-gap)); */
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 .card-set > .item {
   outline: 1px solid teal;
@@ -181,19 +190,61 @@ header {
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
 }
+.section-title {
+  color: var(--title-color);
+  text-transform: uppercase;
+}
+.section-text {
+  color: var(--primary-text-color);
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ 
+НАША КОМАНДА*/
+
+.title {
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
 .card-heading {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+
   color: var(--title-color);
 }
-.card-thumb {
-  outline: 1px solid green;
+.card-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
 }
+
+/* ВТОРАЯ СТРАНИЦА */
 /* Кнопки портфолио */
 .buttons {
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
   min-width: 73px;
-  color: var(--title-color) background-color #f5f4fa;
+  color: var(--title-color);
+
   font-size: 16px;
 
   font-weight: 500;
@@ -202,11 +253,13 @@ header {
   text-align: center;
   text-decoration: none;
 }
-/* Главная кнопка (активная страница)
-.button-primary {
-  color: var(--title-color);
+/* Главная кнопка (активная)*/
+
+.buttons button:hover,
+.buttons button:focus {
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
-} */
+}
 /* ЗАГЛАВИЕ */
 .title {
   color: var(--title-color);
@@ -223,31 +276,48 @@ header {
 }
 /* ПОРТФОЛИО КАРТОЧКИ */
 
-/* .card-thumb {
-  outline: 1px solid  red; */
-
-/* .item {
-  outline: 1px solid tomato;
+.element {
+  outline: 1px solid green;
 }
-.card-content {
+
+.picture-content {
   padding: 30px;
 }
-.card-text {
+.picture-heading {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-color);
+}
+.picture-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+
   margin-top: 10px;
 }
 .content {
   justify-content: center;
 }
-.card {
+.picture {
   box-shadow: var(--card-shadow);
-} */
+}
+
 /* Подвал странички */
 
 .page-footer {
   background-color: #2f303a;
+  width: 1600px;
 }
 .logo {
-  color: var(--accent-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -255,6 +325,8 @@ header {
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
+
+  color: var(--accent-color);
 }
 .accent-white {
   color: var(--primary-white-color);
@@ -265,15 +337,15 @@ address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: calc(14 / 24);
-  /* or 171% */
-  text-align: left;
+  line-height: calc(24 / 14);
+
+  /* text-align: left; */
   margin-bottom: 9px;
 }
-/* .list a {
-  color: #ffffff99;
-  text-decoration: none; */
-/* } */
+.list {
+  text-decoration: none;
+  padding: 0px;
+}
 
 .list-item {
   color: var(--primary-white-color);
@@ -284,6 +356,16 @@ address {
   margin-bottom: 9px;
 }
 .list-item .link {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
   color: var(--primary-text-color);
 }
 .list-item .link:hover,
@@ -294,5 +376,4 @@ address {
 .address {
   color: var(--primary-white-color);
   margin-bottom: 9px;
-  padding-left: 0px;
 }
