@@ -191,10 +191,22 @@ header {
   margin-top: var(--card-set-gap);
 }
 .section-title {
-  color: var(--title-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  color: var(--title-color);
 }
 .section-text {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
 
@@ -210,8 +222,9 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--title-color);
 }
+/* НАША КОМАНДА */
 .card-heading {
   font-family: Roboto;
   font-weight: 500;
@@ -227,8 +240,7 @@ header {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
-  /* identical to box height */
+  line-height: calc(19 / 16);
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -238,13 +250,8 @@ header {
 
 /* ВТОРАЯ СТРАНИЦА */
 /* Кнопки портфолио */
-.buttons {
-  display: inline-block;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 73px;
-  color: var(--title-color);
-
+.button {
+  font-family: Roboto;
   font-size: 16px;
 
   font-weight: 500;
@@ -252,11 +259,19 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
   text-decoration: none;
+
+  display: inline-block;
+  border-radius: 4px;
+  padding: 6px 22px;
+  /* min-width: 73px; */
+  color: var(--title-color);
+  background-color: #f5f4fa;
+  border: 1px solid transparent;
 }
 /* Главная кнопка (активная)*/
 
-.buttons button:hover,
-.buttons button:focus {
+.button:hover,
+.button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -331,30 +346,42 @@ header {
 .accent-white {
   color: var(--primary-white-color);
 }
-address {
-  color: var(--primary-white-color);
-  font-family: Roboto;
+/* address {
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
 
   /* text-align: left; */
-  margin-bottom: 9px;
-}
+/* margin-bottom: 9px;
+} */
+
 .list {
   text-decoration: none;
   padding: 0px;
 }
 
 .list-item {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+
   color: var(--primary-white-color);
+
+  /* text-align: left; */
   margin-bottom: 9px;
 }
-.list-item a {
+/* .list-item a {
   color: var(--primary-white-color);
   margin-bottom: 9px;
-}
+} */
 .list-item .link {
   font-family: inherit;
   font-style: normal;
@@ -365,15 +392,13 @@ address {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
-
-  color: var(--primary-text-color);
 }
 .list-item .link:hover,
 .list-item .link:focus {
   color: var(--accent-color);
 }
 
-.address {
+/* .address {
   color: var(--primary-white-color);
   margin-bottom: 9px;
-}
+} */
