@@ -267,6 +267,7 @@ header {
   color: var(--title-color);
   background-color: #f5f4fa;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 /* Главная кнопка (активная)*/
 
